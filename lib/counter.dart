@@ -28,13 +28,12 @@ class _CounterState extends State<Counter> {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Container(
-        margin: const EdgeInsets.symmetric(
-          horizontal: 30
+    return Container(
+          margin:  const EdgeInsets.only(
+          top: 5
         ),
         padding: const EdgeInsets.symmetric(
-          vertical: 50,
+          vertical: 20,
           horizontal: 10
         ),
         color: Colors.green,
@@ -48,7 +47,7 @@ class _CounterState extends State<Counter> {
               fillColor: Colors.white,
               child: const Icon(
                 Icons.plus_one,
-                size: 35.0,
+                size: 28.0,
               ),
               padding: const EdgeInsets.all(15.0),
               shape: const CircleBorder(),
@@ -56,12 +55,11 @@ class _CounterState extends State<Counter> {
             Text(
               counter.toString(),
               style: const TextStyle(
-                fontSize: 35
+                fontSize: 28
               ),
             ),
           ],
         ),
-      ),
     );
   }
 

@@ -1,7 +1,7 @@
 
 
+import 'package:fluttertest/features.dart';
 import 'package:fluttertest/listsight.dart';
-import 'package:fluttertest/counter.dart';
 import 'package:flutter/material.dart';
 
 import 'listsight.dart';
@@ -40,7 +40,7 @@ class _ContentState extends State<Content> {
     super.initState();
     navigationWidgets = [
       ListSights(),
-      Counter(),
+      FeaturesFragment(),
     ];
   }
 
